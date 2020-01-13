@@ -24,14 +24,14 @@ const TodoPage = () => {
             <Link to={`${match.url}/input`}>INPUT</Link>
             </li>
             <li>
-            <Link to={`${match.url}/list`}>LIST</Link>
+            <Link to={`${match.url}/list/1`}>LIST</Link>
             </li>
         </ul>
 
         <Switch>
         
-        <Route path='/todo/list'>
-            <TodoList></TodoList>
+        <Route path='/todo/list/:page'>
+            <TodoList match={match} ></TodoList>
         </Route>
 
         <Route path={match.path}>
