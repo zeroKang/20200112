@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.page-wrapper {
+  background-color: aqua;
+  width: 50vw;
+  height: 60vh;
+}
